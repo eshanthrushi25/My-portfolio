@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[Your Name Here] — Portfolio</title>
+  <meta name="description" content="[Your Name Here] — [Your Professional Title]. Portfolio featuring projects, skills, education, certifications, and contact information." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container site-header__inner">
+      <a href="#about" class="brand" aria-label="Back to top">
+        <span class="brand__mark">[YN]</span>
+        <span class="brand__name">[Your Name Here]</span>
+      </a>
+
+      <nav class="nav" id="primaryNav" aria-label="Primary">
+        <ul class="nav__list" id="navList">
+          <li><a href="#about" class="nav__link"><span class="nav__index">00</span>About</a></li>
+          <li><a href="#education" class="nav__link"><span class="nav__index">01</span>Education</a></li>
+          <li><a href="#skills" class="nav__link"><span class="nav__index">02</span>Skills</a></li>
+          <li><a href="#certifications" class="nav__link"><span class="nav__index">03</span>Certifications</a></li>
+          <li><a href="#projects" class="nav__link"><span class="nav__index">04</span>Projects</a></li>
+          <li><a href="#achievements" class="nav__link"><span class="nav__index">05</span>Achievements</a></li>
+          <li><a href="#contact" class="nav__link"><span class="nav__index">06</span>Contact</a></li>
+        </ul>
+        <a href="#" class="btn btn--small btn--outline nav__resume">
+          <!-- Replace href with a link to your résumé/CV file, e.g. assets/resume.pdf -->
+          Résumé
+        </a>
+      </nav>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primaryNav">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ ABOUT / HERO ============ -->
+    <section id="about" class="section hero" aria-label="About Me">
+      <div class="container hero__grid">
+
+        <div class="hero__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__index">00</span>Field Record — Personal Profile</p>
+          <h1 class="hero__name">[Your Name Here]</h1>
+          <p class="hero__role">[Your Professional Title — e.g., Full-Stack Software Engineer]</p>
+          <p class="hero__summary">
+            [Write two to three sentences introducing yourself: your background, the kind of problems you like solving,
+            the technologies you specialize in, and what makes your approach distinct. Keep it confident and specific
+            rather than generic.]
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+          </div>
+
+          <dl class="hero__facts">
+            <div class="hero__fact">
+              <dt>Location</dt>
+              <dd>[City, Country]</dd>
+            </div>
+            <div class="hero__fact">
+              <dt>Focus</dt>
+              <dd>[e.g., Web &amp; Cloud Systems]</dd>
+            </div>
+            <div class="hero__fact">
+              <dt>Status</dt>
+              <dd>[Open to Opportunities]</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__plate reveal">
+          <figure class="photo-plate">
+            <div class="photo-plate__frame">
+              <!--
+                Replace the placeholder block below with your own photo, e.g.:
+                <img src="assets/profile.jpg" alt="Portrait of [Your Name Here]" class="photo-plate__img" />
+              -->
+              <div class="photo-plate__placeholder">
+                <svg viewBox="0 0 100 100" class="photo-plate__icon" aria-hidden="true">
+                  <circle cx="50" cy="36" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                  <path d="M18 88c4-20 20-30 32-30s28 10 32 30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span>Add Your Photo</span>
+              </div>
+            </div>
+            <figcaption class="photo-plate__caption">FIG. 01 — [Your Name Here], [Your Role]</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+      <a href="#education" class="scroll-cue" aria-label="Scroll to Education section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section" aria-label="Education">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow"><span class="eyebrow__index">01</span>Academic Record</p>
+          <h2 class="section__title">Education</h2>
+          <p class="section__lede">[A short line about your academic path or learning philosophy, if you'd like to add one.]</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <p class="timeline__date">[2020 — 2024]</p>
+              <h3 class="timeline__title">[Degree Name — e.g., B.Sc. in Computer Science]</h3>
+              <p class="timeline__org">[University / Institution Name] · [City, Country]</p>
+              <p class="timeline__desc">[Brief description: relevant coursework, honors, GPA, thesis topic, or notable achievements during this program.]</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <p class="timeline__date">[2018 — 2020]</p>
+              <h3 class="timeline__title">[Degree / Diploma Name]</h3>
+              <p class="timeline__org">[Institution Name] · [City, Country]</p>
+              <p class="timeline__desc">[Brief description of coursework, focus area, or achievements.]</p>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <p class="timeline__date">[2016 — 2018]</p>
+              <h3 class="timeline__title">[High School / Earlier Qualification]</h3>
+              <p class="timeline__org">[School Name] · [City, Country]</p>
+              <p class="timeline__desc">[Brief description, notable subjects, or extracurricular achievements.]</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section section--muted" aria-label="Skills">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow"><span class="eyebrow__index">02</span>Technical Proficiency</p>
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lede">[A short line about how you approach tools and technology, or your learning philosophy.]</p>
+        </header>
+
+        <div class="skills-grid">
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Languages &amp; Frameworks</h3>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[JavaScript / TypeScript]</span>
+                <span class="skill-meter__value">90%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="[JavaScript / TypeScript] proficiency">
+                <div class="skill-meter__fill" data-level="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[React / Vue]</span>
+                <span class="skill-meter__value">85%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="[React / Vue] proficiency">
+                <div class="skill-meter__fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Node.js]</span>
+                <span class="skill-meter__value">80%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="[Node.js] proficiency">
+                <div class="skill-meter__fill" data-level="80"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Python]</span>
+                <span class="skill-meter__value">75%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="[Python] proficiency">
+                <div class="skill-meter__fill" data-level="75"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Tools &amp; Platforms</h3>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Git / GitHub]</span>
+                <span class="skill-meter__value">90%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="[Git / GitHub] proficiency">
+                <div class="skill-meter__fill" data-level="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Docker]</span>
+                <span class="skill-meter__value">70%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="[Docker] proficiency">
+                <div class="skill-meter__fill" data-level="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[AWS / Cloud]</span>
+                <span class="skill-meter__value">65%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="[AWS / Cloud] proficiency">
+                <div class="skill-meter__fill" data-level="65"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[SQL / Databases]</span>
+                <span class="skill-meter__value">80%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="[SQL / Databases] proficiency">
+                <div class="skill-meter__fill" data-level="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <h3 class="skill-category__title">Professional Skills</h3>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Team Leadership]</span>
+                <span class="skill-meter__value">85%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="[Team Leadership] proficiency">
+                <div class="skill-meter__fill" data-level="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Communication]</span>
+                <span class="skill-meter__value">90%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="[Communication] proficiency">
+                <div class="skill-meter__fill" data-level="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Problem Solving]</span>
+                <span class="skill-meter__value">95%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="[Problem Solving] proficiency">
+                <div class="skill-meter__fill" data-level="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter">
+              <div class="skill-meter__top">
+                <span class="skill-meter__name">[Project Management]</span>
+                <span class="skill-meter__value">75%</span>
+              </div>
+              <div class="skill-meter__track" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="[Project Management] proficiency">
+                <div class="skill-meter__fill" data-level="75"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section" aria-label="Certifications">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow"><span class="eyebrow__index">03</span>Verified Credentials</p>
+          <h2 class="section__title">Certifications</h2>
+          <p class="section__lede">[A short line introducing your certifications or continuous-learning habits.]</p>
+        </header>
+
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__seal" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="cert-card__title">[Certification Name]</h3>
+            <p class="cert-card__issuer">[Issuing Organization]</p>
+            <p class="cert-card__meta">Issued [Month Year] · ID: [XXXX-XXXX]</p>
+            <a href="#" class="cert-card__link">View Credential →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section section--muted" aria-label="Projects">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow"><span class="eyebrow__index">04</span>Selected Work</p>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__lede">[A short line introducing your project work — what kinds of problems you like to build for.]</p>
+        </header>
+
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[React]</span>
+                <span class="tag">[Node.js]</span>
+                <span class="tag">[MongoDB]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title One]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[Python]</span>
+                <span class="tag">[Flask]</span>
+                <span class="tag">[PostgreSQL]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title Two]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[Vue]</span>
+                <span class="tag">[Firebase]</span>
+                <span class="tag">[Tailwind]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title Three]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[TypeScript]</span>
+                <span class="tag">[Next.js]</span>
+                <span class="tag">[AWS]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title Four]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[Java]</span>
+                <span class="tag">[Spring Boot]</span>
+                <span class="tag">[MySQL]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title Five]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media" aria-hidden="true">
+              <span class="project-card__media-label">[Project Screenshot / Preview]</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">[Swift]</span>
+                <span class="tag">[iOS]</span>
+                <span class="tag">[CoreData]</span>
+              </div>
+              <h3 class="project-card__title">[Project Title Six]</h3>
+              <p class="project-card__desc">[Two to three sentences describing the project, the problem it solves, and your specific role or contribution.]</p>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link project-card__link--primary">View Project</a>
+                <a href="#" class="project-card__link">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section" aria-label="Achievements">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow"><span class="eyebrow__index">05</span>Milestones</p>
+          <h2 class="section__title">Achievements</h2>
+          <p class="section__lede">[A short line introducing your key milestones, awards, or recognitions.]</p>
+        </header>
+
+        <div class="achievement-grid">
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M6 4h12v3a6 6 0 01-12 0V4zM6 5H3v2a3 3 0 003 3M18 5h3v2a3 3 0 01-3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="achievement-card__stat">[3×]</p>
+            <h3 class="achievement-card__title">[Award / Milestone Title]</h3>
+            <p class="achievement-card__desc">[Brief description of the achievement and why it mattered.]</p>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="achievement-card__stat">[Top 5%]</p>
+            <h3 class="achievement-card__title">[Award / Milestone Title]</h3>
+            <p class="achievement-card__desc">[Brief description of the achievement and why it mattered.]</p>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="achievement-card__stat">[12+]</p>
+            <h3 class="achievement-card__title">[Award / Milestone Title]</h3>
+            <p class="achievement-card__desc">[Brief description of the achievement and why it mattered.]</p>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12l3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <p class="achievement-card__stat">[100k+]</p>
+            <h3 class="achievement-card__title">[Award / Milestone Title]</h3>
+            <p class="achievement-card__desc">[Brief description of the achievement and why it mattered.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section--dark" aria-label="Contact">
+      <div class="container contact__grid">
+
+        <div class="contact__intro reveal">
+          <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__index">06</span>Let's Connect</p>
+          <h2 class="section__title section__title--on-dark">Contact</h2>
+          <p class="contact__lede">[Let visitors know the best way to reach you and what kinds of opportunities or collaborations you're open to.]</p>
+
+          <dl class="contact__facts">
+            <div class="contact__fact">
+              <dt>Email</dt>
+              <dd><a href="mailto:your.email@example.com">[your.email@example.com]</a></dd>
+            </div>
+            <div class="contact__fact">
+              <dt>Location</dt>
+              <dd>[City, Country]</dd>
+            </div>
+            <div class="contact__fact">
+              <dt>Availability</dt>
+              <dd>[Open to Freelance / Full-Time]</dd>
+            </div>
+          </dl>
+
+          <div class="social-row" aria-label="Social media links">
+            <a href="https://github.com/yourusername" class="social-icon" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" class="social-icon" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:your.email@example.com" class="social-icon" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M2.5 6.5l9.5 7 9.5-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required minlength="2" autocomplete="name" />
+            <span class="form-error" data-error-for="name"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+            <span class="form-error" data-error-for="email"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Let's work together" required minlength="3" />
+            <span class="form-error" data-error-for="subject"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project or opportunity..." required minlength="10"></textarea>
+            <span class="form-error" data-error-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <span class="btn__label">Send Message</span>
+          </button>
+
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <span class="brand__mark">[YN]</span>
+        <p class="footer__tagline">[Your Name Here] — [Your Professional Title]. Built with intention, one section at a time.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="social-row social-row--footer" aria-label="Social media links">
+        <a href="https://github.com/yourusername" class="social-icon" aria-label="GitHub profile" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11 11 0 015.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.77.11 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.41-5.27 5.69.41.36.78 1.07.78 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.67.8.56A10.51 10.51 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/yourusername" class="social-icon" aria-label="LinkedIn profile" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="mailto:your.email@example.com" class="social-icon" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M2.5 6.5l9.5 7 9.5-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="currentYear"></span> [Your Name Here]. All rights reserved.</p>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
