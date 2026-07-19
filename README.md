@@ -2,11 +2,11 @@
 
 A modern, responsive, and lightweight personal portfolio website designed to showcase a student's digital identity, technical skills, projects, and achievements. Fully deployed and accessible worldwide via GitHub Pages.
 
-🚀 **[Live Project Link] https://eshanthrushi25.github.io/My-portfolio/**
+ **[Live Project Link] https://eshanthrushi25.github.io/My-portfolio/**
 
 ---
 
-## 🛠️ Tech Stack & Architecture
+##  Tech Stack & Architecture
 
 This project is built purely with native front-end web technologies to ensure exceptional performance, clean semantic layout structure, and modular maintenance.
 
@@ -16,7 +16,7 @@ This project is built purely with native front-end web technologies to ensure ex
 
 ---
 
-## ✨ Key Features & Component Breakdown
+##  Key Features & Component Breakdown
 
 *   **Responsive Navigation Menu**: A sticky desktop header that seamlessly transitions into a responsive **JavaScript-powered hamburger toggle** on smaller mobile breakpoints.
 *   **About Me & Biography**: Dedicated section introducing professional objectives alongside visual profile placeholders.
