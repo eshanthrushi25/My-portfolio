@@ -2,7 +2,7 @@
 
 A modern, responsive, and lightweight personal portfolio website designed to showcase a student's digital identity, technical skills, projects, and achievements. Fully deployed and accessible worldwide via GitHub Pages.
 
-🚀 **[Live Project Link](https://github.io)**
+🚀 **[Live Project Link] https://eshanthrushi25.github.io/My-portfolio/**
 
 ---
 
